@@ -15,11 +15,11 @@ html {
 body{
     margin:0; /* removes gap at top of page */
 }
-
+/* 
 ::selection {
     color: #000; 
     background: #ff0;
-}
+} */
 
 h1 {
     font-weight: normal;
@@ -81,6 +81,42 @@ footer {
 
 /* Responsive rules */
 
+/* start positioning styles */
+.text-align-center{
+  text-align:center;
+  background-color:aqua;
+}
+.margin-auto > div{
+  margin:auto;
+  width:50%;
+  background-color:beige;
+  text-align:center;
+}
+/* Allows box to take up full space, ignoring padding/margin */
+* {
+  box-sizing: border-box;
+ }
+/* Create two equal columns that floats next to each other */
+.my-column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  min-height: 300px; /* Can be removed. Only for demonstration */
+}
+/* Clear floats after the columns */
+.my-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media all and (max-width:500px) {
+  .my-column {
+    width: 100%;
+  }
+}
+
+/* end positioning styles */
+
 /* DESKTOP */
 @media all and (min-width:1200px) {
     main.wrapper {
@@ -135,5 +171,6 @@ footer {
     picture.profile img {
         width: 100%;
     }
+
     
 }
