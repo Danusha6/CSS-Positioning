@@ -100,8 +100,8 @@ footer {
 .my-column {
   float: left;
   width: 50%;
-  padding: 1%;
-  min-height: 300px; /*Can be removed. Only for demonstration*/
+  padding:  10px;
+  min-height: 400px; /*Can be removed. Only for demonstration*/
 }
 /* Clear floats after the columns */
 .my-row:after {
